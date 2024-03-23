@@ -2,7 +2,7 @@
 {
     public class Program
     {
-
+        public static List<Customer> customers = new Atm().customers; // dodadeno
         public static Customer AuthenticateCustomer()
         {
             Console.WriteLine("Welcome to the ATM");
@@ -36,7 +36,7 @@
 
                     string choice = Console.ReadLine();
 
-
+                    
                     switch (choice)
                     {
                         case "1":
@@ -104,6 +104,7 @@
                 };
 
         }
+        
     }
 }
 
